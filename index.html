@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>museum news page</title>
     
     <link rel="icon" href="assets/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -35,8 +35,14 @@
                 
                 <div class="text-part first-text">
                     <div class="image">
-                        <img src="assets/new1.jpg" alt="">
+                        <img src="assets/new1.jpg" class="photo" onclick="openImage(1)" alt="">
                     </div>
+
+                    <div class="modal">
+                        <span class="close" onclick="closeImage(1)">&times;</span>
+                        <img class="modal-content">
+                    </div>
+
                     <div class="text">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, atque eligendi unde eius libero reprehenderit fugit eveniet illum velit adipisci!...</p>
                     </div>
@@ -55,8 +61,14 @@
                 
                 <div class="text-part second-text">
                     <div class="image">
-                        <img src="assets/new2.jpeg" alt="">
+                        <img src="assets/new2.jpeg" class="photo" onclick="openImage(2)" alt="">
                     </div>
+
+                    <div class="modal">
+                        <span class="close" onclick="closeImage(2)">&times;</span>
+                        <img class="modal-content">
+                    </div>
+
                     <div class="text">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, atque eligendi unde eius libero reprehenderit fugit eveniet illum velit adipisci!...</p>
                     </div>
@@ -75,8 +87,14 @@
                 
                 <div class="text-part third-text">
                     <div class="image">
-                        <img src="assets/new1.jpg" alt="">
+                        <img src="assets/new2.jpeg" class="photo" onclick="openImage(3)" alt="">
                     </div>
+
+                    <div class="modal">
+                        <span class="close" onclick="closeImage(3)">&times;</span>
+                        <img class="modal-content">
+                    </div>
+
                     <div class="text">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, atque eligendi unde eius libero reprehenderit fugit eveniet illum velit adipisci!...</p>
                     </div>
@@ -94,5 +112,8 @@
             <p>Физматикус 2025 ©. Все права защищены</p>
         </footer>
     </div>
+
+    <script src="main.js"></script>
+
 </body>
 </html>
